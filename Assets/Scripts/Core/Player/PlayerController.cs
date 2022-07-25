@@ -55,7 +55,7 @@ namespace Core.Player
                 nextPatrolPoint = _mapController.PatrolPoints[Random.Range(0, _mapController.PatrolPoints.Count)];
             }
             
-            _coroutine = GoToCoroutine(nextPatrolPoint);
+            _coroutine = GoToCoroutine(nextPatrolPoint, Patrolling);
             StartCoroutine(_coroutine);
         }
         
